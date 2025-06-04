@@ -1,0 +1,27 @@
+communicatin language : Eng,Hind,urdu,telugu,...….
+
+Human => Dump Mechain 
+
+2 + 2 => (Binary Language) => Process => result (Binary Language) => 4
+
+Binary(2) Language : 01
+
+coding langs:
+java, c, javascript, python, rube.... 
+
+compiler/interpreter
+
+01 lang
+
+binary(2) / hex(10) / oct(8)
+
+
+Fundmentals => core concepts
+
+synatax => a set of rules for paticulart lang
+
+
+input (2 + 2) => rules different => output (4)
+
+Code Editarts (IDE) (vs code , sublime)
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+      /*  #id , .class , element */
+    </style>
+  </head>
+  <body>
+    <h1>DOM (Document Object Model)</h1>
+
+    <!-- <h1 id="heading01">Hello JS</h1>
+
+    <div id="container01"></div>
+
+    <div class="card"> card 01</div>
+    <div class="card"> card 02</div>
+    <div class="card"> card 03</div>
+    <div class="card"> card 04</div> -->
+
+    <form action="">
+      <input type="text" placeholder="Enter your UserName" id="userName" />
+      <input type="text" placeholder="Enter your password" id="password" />
+
+      <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <!-- <div id="container" style="background: red">
+      
+      <button id="btn">1</button>
+      <button id="btn">2</button>
+      <button id="btn">3</button>
+      <button id="btn">4</button>
+      <button id="btn">5</button>
+    </div> -->
+
+    <!-- <script>
+      // dom (to do manuplate the UI)
+      // console.log("document", document);
+
+      // let heading = document.getElementById("heading01");
+      // let text = heading.innerText;
+      // console.log(heading.innerText = `${text} Bye`)
+
+      // console.log(heading.innerHTML);
+      // console.log((heading.style.background = "red"));
+      // heading.innerText = "Hello Sameer";
+
+      // let container = document.getElementById("container01");
+
+      // container.style.border = "2px solid red";
+      // container.style.height = "200px";
+
+      // container.innerHTML = "<h2> Car Card </h2>";
+
+      // console.log(container);
+
+      // let cards = document.getElementsByClassName("card").length
+      // .item(0)
+      // console.log(cards)
+
+      // console.log(document.getElementsByTagName("h1"))
+
+      // console.log(document.querySelector(".card"))
+      // // #id ,.class , tag
+
+      // console.log(document.querySelectorAll(".card"))
+      // // #id ,.class , tag
+
+      // Events (actions)
+
+      // click , change, hover ....
+
+      // let userName = document.getElementById("userName");
+      // let password = document.getElementById("password");
+      // let container = document.getElementById("container");
+
+      // let btn = document.getElementById("btn");
+
+      // userName.addEventListener("change", (e) => console.log(e)); // eventName , callback function
+
+      // function changeHandel(event) {
+      //   return console.log(event);
+      // }
+
+      // const d = () => {}
+
+      // let users = []; // {userName:"",pasword:""}
+
+      // btn.addEventListener("click", (event) => {
+      //   users.push({
+      //     userName: userName.value,
+      //     password: password.value,
+      //   });
+
+        // for (let i = 0; i < users.length; i++) {
+          // let el = document.createElement("h3");
+
+          // el.innerText = users[i].userName;
+          // el.innerText = userName.value;
+
+          // container.appendChild(el);
+
+          // container.innerHTML = `<h3> ${users[i].userName} </h3>`;
+
+          // template litrals
+          // string concat , dyname
+        // }
+
+        // return console.log("users", users);
+      // }); // eventName , callback function
+
+      // console.log(userName);
+
+      // callback function // HOF
+
+      // function greet(userName) {
+      //   return console.log("Good Morning ", userName);
+      // }
+
+      // function name(userName, cb) {
+      //   return cb(userName); // callback function
+      // }
+
+      // name("sameer", greet); // HOF
+    </script> -->
+
+    <script>
+      // event bubbling
+
+      let el = document.getElementById("btn");
+      // let containerel = document.getElementById("container");
+
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(e);
+      });
+
+      // function submitHandel() {
+      //   console.log("hello submitHandel ");
+      // }
+
+      // containerel.addEventListener("click", (e) => {
+      //   console.log(" submitHandel " , e.target.innerText);
+      // });
+
+      // event delegation
+    </script>
+  </body>
+</html>
