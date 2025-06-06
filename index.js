@@ -650,3 +650,9 @@ function sum() {
 }
 
 console.log(sum());
+
+function raju(){
+  return "Hello Raju"
+}
+
+console.log(raju())
