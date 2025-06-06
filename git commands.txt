@@ -1,0 +1,68 @@
+git commands :
+
+need to create a new repo in GitHub website,
+
+Git Repository Link : https://exampleOfGithubRepoLink
+
+in vscode gitbash commands :
+
+1) git init
+
+2) git add . (all files)
+
+   i) git add src/components/Header.js (single files)
+
+3) git status (the files which added , that are staged or not)
+
+4) git commit -m "message to commite"
+
+5) git push
+
+Note : before pulling code you need to be in the branch where you need to pull.
+
+6) git pull origin branchName (give branchName from where need to pull)
+
+extra:
+
+git fetch --all (if you created branch just fetch updated branchs)
+
+git branch (to check branch)
+
+git checkout branchName (to shift the branch)
+
+git checkout -b branchName (to shift the branch , if it is not there create and shift)
+
+-- authentication
+
+git config --global user.name "Your Name"
+
+git config --global user.email "your@email.com"
+
+
+if you are working with team :
+
+ask link to clone project :
+
+example link : https://github.com/shaiksameer12k/april_2025_batch.git
+
+go to your system , go to the path where you need to clone project, right click and open (git bash here), it will take you to bash prompt, give below command.
+
+git clone (Example Link : https://github.com/shaiksameer12k/april_2025_batch.git)
+
+and after cloning this code again repert from step 1 (command 1 and pre you requrements)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
