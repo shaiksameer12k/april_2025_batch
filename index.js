@@ -631,12 +631,22 @@ const car = { brand: "TATA", color: "black" }; // empty object
 // console.log(fruits1[0][1]);
 // console.log(fruits1.flat()); // layers default (1) => (2)
 
-function greet(useName) {
-  return `Hello Good Morning ${useName}`;
+// function greet(useName) {
+//   return `Hello Good Morning ${useName}`;
+// }
+
+// function name(userName, cb) {
+//   return cb(userName);
+// }
+
+// console.log(name("sameer", greet));
+
+//  Students branch (kalyan)  => Javascript branch  (raju)
+
+// they both are working in a same file
+
+function sum() {
+  return "Kalayn";
 }
 
-function name(userName, cb) {
-  return cb(userName);
-}
-
-console.log(name("sameer", greet));
+console.log(sum());
