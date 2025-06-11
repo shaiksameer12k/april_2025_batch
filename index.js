@@ -612,7 +612,7 @@ const car = { brand: "TATA", color: "black" }; // empty object
 
 // at , includes , indexOf , concat  , toString
 
-// let marks = [20, 24, 22, 21];
+let marks = [20, 24, 22, 21];
 // let marks1 = [23];
 // console.log("org", marks);
 // console.log(marks.at(2));
@@ -631,28 +631,33 @@ const car = { brand: "TATA", color: "black" }; // empty object
 // console.log(fruits1[0][1]);
 // console.log(fruits1.flat()); // layers default (1) => (2)
 
-// function greet(useName) {
-//   return `Hello Good Morning ${useName}`;
-// }
+// map , filter , find , reduce
 
-// function name(userName, cb) {
-//   return cb(userName);
-// }
+//  call back function ()=>{}
+//  map and filter will return new array
 
-// console.log(name("sameer", greet));
+// let newMarks = marks.map((item, index) => item + 5);
 
-//  Students branch (kalyan)  => Javascript branch  (raju)
+// console.log("org marks", marks);
+// console.log("newMarks", newMarks);
 
-// they both are working in a same file
+// let filterData = marks.filter((item, index)=> item >= 21 )
+// console.log(filterData)
 
-function sum() {
-  return "Kalayn";
-}
+//  find will not return a new array it will single value
+// let finedValue =  marks.find((item , index) => item >= 21 )
 
-console.log(sum());
+// console.log(finedValue)
 
-function raju(){
-  return "Hello Raju"
-}
+// let totalmarks = marks.reduce((prev, item) => prev + item, 0); // (callbackfunction , initialvalue)
 
-console.log(raju())
+// console.log(totalmarks)
+
+let d = [];
+
+console.log(false == 0);
+
+// marks.forEach((item, index) => d.push(item + 10));
+
+// console.log("org marks", marks);
+// console.log(d)
