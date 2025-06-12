@@ -612,7 +612,7 @@ const car = { brand: "TATA", color: "black" }; // empty object
 
 // at , includes , indexOf , concat  , toString
 
-let marks = [20, 24, 22, 21];
+// let marks = [20, 24, 22, 21];
 // let marks1 = [23];
 // console.log("org", marks);
 // console.log(marks.at(2));
@@ -653,11 +653,48 @@ let marks = [20, 24, 22, 21];
 
 // console.log(totalmarks)
 
-let d = [];
+// let d = [];
 
-console.log(false == 0);
+// console.log(false == 0);
 
 // marks.forEach((item, index) => d.push(item + 10));
 
 // console.log("org marks", marks);
 // console.log(d)
+
+// sort, every , some
+
+// let fruits01 = ["Grapes", "Apple", 'Watermelon' ,"Banana"];
+
+// only for alpha
+// console.log(fruits01.sort())
+
+// we can apply reverse on unsort array
+// console.log(fruits01.reverse())
+
+// let ages = [21, 32, 18, 30, 27, 15];
+
+// numaric sorting
+
+// console.log(ages.sort((a, b) => a - b));
+
+// console.log(ages.sort((a, b) => b - a));
+
+// let data = ["Apple", "apple"];
+
+// let searchedValue = "APP";
+
+// let searchedData = data.filter((item) =>
+//   String(item).toLowerCase().includes(searchedValue.toLowerCase())
+// );
+
+// console.log(searchedData);
+
+// every , some (retun boolen value)
+
+// let marks = [20, 24, 17, 22, 21];
+
+// console.log(marks.every((item) => item >= 18)) 
+
+// console.log(marks.some((item) => item >= 18))
+ 
