@@ -694,7 +694,52 @@ const car = { brand: "TATA", color: "black" }; // empty object
 
 // let marks = [20, 24, 17, 22, 21];
 
-// console.log(marks.every((item) => item >= 18)) 
+// console.log(marks.every((item) => item >= 18))
 
 // console.log(marks.some((item) => item >= 18))
- 
+
+// String "" '' ``
+
+let lastName = " Shaik";
+let firstName = "Sameer";
+
+// console.log(lastName.length)
+
+// + (concat)
+// let fullName = lastName + " " + firstName;
+
+// template litrals
+// let fullName = `Hello ${lastName} ${firstName}`
+// console.log(fullName);
+
+// console.log(lastName === firstName)
+// console.log("abc" === "abc")
+
+// console.log(lastName.toLowerCase())
+// console.log(lastName.toUpperCase())
+// console.log(lastName.charAt(3))
+// console.log(lastName.at(2))
+// console.log(lastName.replace("h","o"))
+// console.log(lastName.startsWith("S"))
+// console.log(lastName.endsWith("k"))
+// console.log(lastName.concat(firstName))
+// console.log(lastName.includes("h"))
+// console.log(lastName.indexOf("h"))
+// console.log(lastName.repeat(3))
+// console.log(lastName.substring(0,3))
+// console.log(lastName.length);
+// let d = lastName.trimStart();
+// let d = lastName.trimEnd();
+// console.log(d);
+// console.log(d.length);
+// console.log(lastName.slice(0,4))
+let date = "13-06-2025";
+console.log(date.split("-"));
+
+// let age = 20;
+// console.log(age)
+// console.log(age.toString());
+// console.log(String(age))
+
+// console.log(100 + 30 + "1" + 10) 
+// (141 true) // (151 false) // (130110 true)
