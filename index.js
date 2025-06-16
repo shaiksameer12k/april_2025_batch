@@ -185,7 +185,7 @@
 
 // •	Comparison Operators (boolen values (true / false))
 // > , <, == (loose operator) , === (strict operator) , <=, >=
-let a = "20";
+// let a = "20";
 
 // console.log(a > 20);
 // console.log(a < 11)
@@ -465,7 +465,7 @@ let a = "20";
 
 // Array mehtods push , pop , shift , unshift
 
-const fruits = ["apple", "banana", "grapes"];
+// const fruits = ["apple", "banana", "grapes"];
 
 // push (it will add in last index of array)
 // fruits.push("kiwi");
@@ -493,12 +493,12 @@ const fruits = ["apple", "banana", "grapes"];
 //   console.log(fruits[i]);
 // }
 
-const students = [
-  { name: "sameer", age: 20, class: "10th", rollNo: 1 },
-  { name: "sham", age: 19, class: "12th", rollNo: 2 },
-  { name: "suhail", age: 21, class: "11th", rollNo: 3 },
-  { name: "john", age: 20, class: "10th", rollNo: 4 },
-];
+// const students = [
+//   { name: "sameer", age: 20, class: "10th", rollNo: 1 },
+//   { name: "sham", age: 19, class: "12th", rollNo: 2 },
+//   { name: "suhail", age: 21, class: "11th", rollNo: 3 },
+//   { name: "john", age: 20, class: "10th", rollNo: 4 },
+// ];
 
 // console.log( students[0].name )
 // console.log( students[1].name )
@@ -532,7 +532,7 @@ const students = [
 
 // Object (realworld entity )
 
-const car = { brand: "TATA", color: "black" }; // empty object
+// const car = { brand: "TATA", color: "black" }; // empty object
 
 // syntax to access prop
 // Dot Notation // Brackert Notation
@@ -700,8 +700,8 @@ const car = { brand: "TATA", color: "black" }; // empty object
 
 // String "" '' ``
 
-let lastName = " Shaik";
-let firstName = "Sameer";
+// let lastName = " Shaik";
+// let firstName = "Sameer";
 
 // console.log(lastName.length)
 
@@ -733,13 +733,82 @@ let firstName = "Sameer";
 // console.log(d);
 // console.log(d.length);
 // console.log(lastName.slice(0,4))
-let date = "13-06-2025";
-console.log(date.split("-"));
+// let date = "13-06-2025";
+// console.log(date.split("-"));
 
 // let age = 20;
 // console.log(age)
 // console.log(age.toString());
 // console.log(String(age))
 
-// console.log(100 + 30 + "1" + 10) 
+// console.log(100 + 30 + "1" + 10)
 // (141 true) // (151 false) // (130110 true)
+
+// let marks1 = "20";
+// let marks2 = 30;
+
+// 20 , 20.23 (int , float , BinInt )
+
+// console.log(Number(marks1) + marks2);
+
+// Math Object
+
+// console.log("Floor", Math.floor(20.41)); // lesseer
+
+// console.log("Ceil", Math.ceil(20.00001)); // above
+
+// console.log("Round", Math.round(20.5)); // abover .49 > ,  below .49 <=
+
+// console.log("max", Math.max(25, 21)); // it will return max value
+
+// console.log("min", Math.min(21, 26)); // it will return min value
+
+// console.log("sqrt", Math.sqrt(8)); // it will return sqrt
+
+// console.log("toFixed" , 20.00001.toFixed(2))
+
+// for (let i = 0; i < 10; i++) {
+//   console.log("random ", Math.round(Math.random() * 150));
+// }
+
+// Date
+
+let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+let month = [
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+];
+
+// console.log(new Date());
+// console.log("getDate", new Date().getDate());
+// console.log("getDay", new Date().getDay());
+// console.log("getMonth", new Date().getMonth() + 1); // -1 +1
+
+// console.log("getDay", days[new Date().getDay()]);
+// console.log("getMonth", month[new Date().getMonth()]);
+
+// console.log("getFullYear", new Date().getFullYear());
+// console.log("getHours", new Date().getHours());
+// console.log("getMinutes", new Date().getMinutes());
+// console.log("getSeconds", new Date().getSeconds());
+// console.log("getMilliseconds", new Date().getMilliseconds());
+
+// YYYY-MM-DD
+// console.log(new Date("2001-01-12").toUTCString())
+// console.log(new Date("2001-01-12").toISOString())
+// console.log(new Date("2001-01-12").toLocaleDateString())
+
+// console.log(new Date("2001-01-12") < new Date())
+
+
+
