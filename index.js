@@ -773,21 +773,21 @@
 
 // Date
 
-let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-let month = [
-  "jan",
-  "feb",
-  "mar",
-  "apr",
-  "may",
-  "jun",
-  "jul",
-  "aug",
-  "sep",
-  "oct",
-  "nov",
-  "dec",
-];
+// let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+// let month = [
+//   "jan",
+//   "feb",
+//   "mar",
+//   "apr",
+//   "may",
+//   "jun",
+//   "jul",
+//   "aug",
+//   "sep",
+//   "oct",
+//   "nov",
+//   "dec",
+// ];
 
 // console.log(new Date());
 // console.log("getDate", new Date().getDate());
@@ -810,5 +810,69 @@ let month = [
 
 // console.log(new Date("2001-01-12") < new Date())
 
+// destructoring , spred , rest , modules
 
+// destructoring will apply both on arrays and object
 
+// we can seprate needed data from arrays and objects
+
+//  let users = ["sameer", "kayalan", "raju", "surya"];
+
+// console.log(users[0]);
+// console.log(users[3]);
+
+// console.log(Array.isArray(users))
+
+// Array destructoring:
+// let [one, two, _, x] = users;
+
+// console.log(one, two, x);
+
+// let user = { name: "sameer", age: 24, rollNo: 100 };
+
+// obj destrutoting
+// let { name, rollNo } = user;
+
+// console.log(name , rollNo)
+
+// let x = 10;
+
+// let y = x;
+
+// y = 30;
+
+// console.log("x", x);
+// console.log("y", y);
+
+// spred , rest  (...)
+
+// let users = ["sameer", "kayalan", "raju", "surya"];
+
+// //  shallow
+// let users1 = users;
+
+// users1[0] = "ram";
+
+// console.log("org", users);
+// console.log("copy", users1);
+
+// modules
+// Import , Export
+
+// const studentData = { userName: "sameer", age: 24 };
+
+// const name = "samer";
+
+// const age = 40;
+
+// default export
+// export default studentData;
+
+// named export
+// export { name, age };
+
+// default import
+// import data from "./data";
+
+// named import
+// import { name, age } from "./data";
