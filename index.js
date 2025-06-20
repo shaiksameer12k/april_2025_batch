@@ -859,6 +859,8 @@
 // modules
 // Import , Export
 
+// console.log(studentData)
+
 // const studentData = { userName: "sameer", age: 24 };
 
 // const name = "samer";
@@ -876,3 +878,39 @@
 
 // named import
 // import { name, age } from "./data";
+
+// Memorys
+
+//  Stack Memory & Heap Memory
+
+// Memory Allocation Phase
+
+// run time / execution phase
+
+// Premitive and Non-Primetive
+
+// premitive data types will store in stack memory
+// Non-premitive data types will store in heep memeor
+
+// stack memory will have a limt (short memor)
+// Heap it will be in large size
+
+let userName = "sameer";
+let age = 20;
+
+let age1 = age;
+
+age1 = 30;
+
+console.log(age);
+console.log(age1);
+
+let marks = [20, 23, 25, 12];
+
+let marks1 = marks
+
+marks1[0] = 100;
+console.log(marks)
+console.log(marks1)
+
+let user = { userName: "sahil", age: 20 };
