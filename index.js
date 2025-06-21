@@ -895,22 +895,104 @@
 // stack memory will have a limt (short memor)
 // Heap it will be in large size
 
-let userName = "sameer";
-let age = 20;
+// let userName = "sameer";
+// let age = 20;
 
-let age1 = age;
+// let age1 = age;
 
-age1 = 30;
+// age1 = 30;
 
-console.log(age);
-console.log(age1);
+// console.log(age);
+// console.log(age1);
 
-let marks = [20, 23, 25, 12];
+// let marks = [20, 23, 25, 12];
 
-let marks1 = marks
+// let marks1 = marks
 
-marks1[0] = 100;
-console.log(marks)
-console.log(marks1)
+// marks1[0] = 100;
+// console.log(marks)
+// console.log(marks1)
 
-let user = { userName: "sahil", age: 20 };
+// let user = { userName: "sahil", age: 20 };
+
+// shallow copy
+
+let letters = ["a", "b", "c"];
+
+let user = { userName: "sameer", age: 20 };
+
+// let userCopy = user;
+// let lettersCopy = letters;
+
+// userCopy.age = 15;
+
+// spred (= R) , rest (L = )(...)
+
+// deep copy
+// spred
+// let userDeepCopy = { ...user };
+// let lettersDeepCopy = [...letters]
+
+// userDeepCopy.age = 150;
+// lettersDeepCopy[0] = "sameer"
+
+// console.log("org", user);
+// console.log("shallow copy", userCopy);
+// console.log("deep copy", userDeepCopy);
+
+// console.log("org", letters);
+// console.log("shallow copy", lettersCopy);
+// console.log("deep copy", lettersDeepCopy);
+
+// destructor (rest)
+// let [one, ...remain] = letters;
+// let { userName , ...u } = user
+
+// console.log(one, remain);
+
+// console.log(userName , u)
+
+// rest
+// function user(...userData) {
+//   let [_, age, _, city] = userData;
+
+//   return console.log("User", city);
+// }
+
+// user("sameer", 20, "12th", "banlore");
+
+
+
+// IIFE
+// nameless function
+// (function () {
+//   return console.log("IIFE");
+// })();
+
+
+//functions currying
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+//      return console.log(a + b + c);
+//     };
+//   };
+// }
+
+// sum(2)(3)(10);
+
+// && , || , ! , 
+
+// nullesh ?? (null , undefined)
+
+// let userName = "sameer"
+
+// console.log(userName.length > 0 ? userName : "Error")
+
+// console.log(userName ?? "Default" )
+
+
+
+
+
+
