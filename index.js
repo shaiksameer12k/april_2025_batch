@@ -961,14 +961,11 @@ let user = { userName: "sameer", age: 20 };
 
 // user("sameer", 20, "12th", "banlore");
 
-
-
 // IIFE
 // nameless function
 // (function () {
 //   return console.log("IIFE");
 // })();
-
 
 //functions currying
 // function sum(a) {
@@ -981,7 +978,7 @@ let user = { userName: "sameer", age: 20 };
 
 // sum(2)(3)(10);
 
-// && , || , ! , 
+// && , || , ! ,
 
 // nullesh ?? (null , undefined)
 
@@ -991,8 +988,14 @@ let user = { userName: "sameer", age: 20 };
 
 // console.log(userName ?? "Default" )
 
+// let input = "Sameer bro, How are you?";
 
+// Output = "Sameer bro, How are you?"
 
+// let r = input.split(" ")?.map((item) => {
+//   return item?.split("").reverse().join("");
+// });
 
+// console.log(r.join(""));
 
 
