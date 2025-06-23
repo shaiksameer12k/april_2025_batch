@@ -998,4 +998,53 @@ let user = { userName: "sameer", age: 20 };
 
 // console.log(r.join(""));
 
+// How Js Works ?
 
+// sync language (line by line code exe)
+// single thered language
+// v8 enngin
+
+// async calls
+
+// console.log("one");
+
+// setTimeout(() => {
+//   console.log("two  (time taken)");
+// }, 3000); // 1000 ms = 1s
+
+// setInterval(() => {
+//   console.log("Set Inteval");
+// }, 3000);
+
+// console.log("three");
+
+// Apis (Application Program Interface)
+
+// async call
+
+// Promeses , async/await
+
+// pending => reject => fullfilment
+
+// let promise = new Promise((resolve, reject) => {
+//   if (true) {
+//     reject();
+//   }
+// });
+
+// promise resolve (then)
+// promise reject (catch)
+
+// promise
+//   .then(() => {
+//     console.log("then");
+//   })
+//   .catch((error) => {
+//     console.log("catch ");
+//   });
+
+let promise = fetch("https://dummyjson.com/users");
+
+promise
+  .then((res) => res.json().then((data) => console.log(data)))
+  .catch((err) => console.log("err",err));
