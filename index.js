@@ -1043,8 +1043,27 @@ let user = { userName: "sameer", age: 20 };
 //     console.log("catch ");
 //   });
 
-let promise = fetch("https://dummyjson.com/users");
+// let promise = fetch("https://dummyjson.com/users");
+// promise
+//   .then((res) => res.json().then((data) => console.log(data)))
+//   .catch((err) => console.log("err",err));
 
-promise
-  .then((res) => res.json().then((data) => console.log(data)))
-  .catch((err) => console.log("err",err));
+// async / await
+
+// async function
+
+async function apiCall(id) {
+  // error handling
+
+  try {
+    const result = await fetch(`https://jsonplaceholder.typicode.com/photos`);
+    const jsonData = await result.json();
+    console.log(jsonData);
+  } catch (error) {
+    console.log(`error`, error);
+  }
+}
+apiCall();
+
+
+// const apiCall = async () => {}
