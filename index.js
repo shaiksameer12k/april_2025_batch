@@ -1052,18 +1052,80 @@ let user = { userName: "sameer", age: 20 };
 
 // async function
 
-async function apiCall(id) {
-  // error handling
+// async function apiCall(id) {
+// error handling
 
-  try {
-    const result = await fetch(`https://jsonplaceholder.typicode.com/photos`);
-    const jsonData = await result.json();
-    console.log(jsonData);
-  } catch (error) {
-    console.log(`error`, error);
-  }
-}
-apiCall();
-
+//   try {
+//     const result = await fetch(`https://jsonplaceholder.typicode.com/photos`);
+//     const jsonData = await result.json();
+//     console.log(jsonData);
+//   } catch (error) {
+//     console.log(`error`, error);
+//   }
+// }
+// apiCall();
 
 // const apiCall = async () => {}
+
+// API's (Application Program Interface)
+
+// to connect frontend with backend
+
+// Rest Apis , Websockets , graphql ...
+
+// request (frontend)  <=> response (backend)
+
+// https://jsonplaceholder.typicode.com/posts
+
+// http / https => hyper text transfer protocal (secure) => protocall
+
+// jsonplaceholder.typicode.com => Domain
+
+// posts => route
+
+// Data transfer in => json formate => javascript object notaion  => object
+
+// light waight
+
+// let userData = { userName: "sameer", age: 20 };
+
+// let jsonData = JSON.stringify(userData);
+
+// let jsonData1 = JSON.parse(jsonData)
+
+// console.log( userData?.userName)
+
+// console.log(jsonData?.userName)
+// console.log(jsonData1?.userName)
+
+// console.log(JSON.parse(jsonData))
+
+// {
+//   userName : "sameer"
+// }
+
+// {
+//   "userName" : 'sameer'
+// }
+
+
+// Methods ( Post (send) , Get (pulling) , Put (update) , Delete (remove)  )
+
+// post api (post, get, put, delete) (functionalaty)
+{
+  userName :"sameer"
+}
+
+// get api
+
+
+// put
+{
+  userName : "sam001"
+}
+
+
+// delete
+{
+  userName : "---"
+}
