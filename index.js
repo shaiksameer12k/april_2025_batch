@@ -1108,24 +1108,85 @@ let user = { userName: "sameer", age: 20 };
 //   "userName" : 'sameer'
 // }
 
-
 // Methods ( Post (send) , Get (pulling) , Put (update) , Delete (remove)  )
 
 // post api (post, get, put, delete) (functionalaty)
 {
-  userName :"sameer"
+  userName: "sameer";
 }
 
 // get api
 
-
 // put
 {
-  userName : "sam001"
+  userName: "sam001";
 }
-
 
 // delete
 {
-  userName : "---"
+  userName: "---";
 }
+
+// dynamic route => /${3}
+// quarry params => ?postId=2
+
+async function ApiCall(id) {
+  // await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  // await fetch(`https://jsonplaceholder.typicode.com/comments?postId=101`);
+  let result = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?userId=101`
+  );
+
+  let data = await result.json();
+
+  console.log("ApiCall", data);
+}
+
+// ApiCall(101);
+
+/*
+fetch(apiUrl , 
+{ 
+   method: post/get/put/delete/patch.....  ,
+   body: json.strigify(userData),
+   headers:{
+   'Content-type': 'application/json; charset=UTF-8',
+   }
+}
+)
+*/
+
+const PostApi = async (apiInfo) => {
+  // let { url, method, body, headers } = apiInfo;
+  let { url, ...params } = apiInfo;
+  try {
+    let result = await fetch(url, params);
+    let data = await result.json();
+    console.log("PostApi", data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+let apiInfo = {
+  url: "https://jsonplaceholder.typicode.com/posts",
+  method: "POST",
+  body: {
+    title: "sahil",
+    body: "ahil bro",
+    userId: 111,
+  },
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+};
+
+let getApiInfo = {
+  url: "https://jsonplaceholder.typicode.com/posts",
+  method: "GET",
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+};
+
+PostApi(getApiInfo);
